@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:id="@+id/searchViewHolder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:focusable="true"
+            android:clickable="true"
+            app:layout_scrollFlags="scroll|enterAlways|snapMargins"
+            android:background="@drawable/search_view_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/search_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search..."
+                android:layout_gravity="center_vertical"
+                android:textSize="17sp"
+                android:layout_marginStart="15dp"/>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/appBarLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/searchAndSliderHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:orientation="vertical">
+
+                <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                    android:id="@+id/imgOffersSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:showCaption="false"
+                    app:showIndicator="false"
+                    android:background="@color/cardview_light_background"
+                    app:autoPlay="true"
+                    app:autoPlayDelay="5000"
+                    app:showTopShadow="false"
+                    app:showBottomShadow="false"
+                    app:showNavigationButtons="false"
+                    app:imageScaleType="fitXY"
+                    app:scaleOnScroll="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="0dp"
+                    app:imagePlaceholder="@drawable/loading_image"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/searchAndSliderHolder"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/txtCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider4"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="@string/categories"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtCategory"/>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rvCategory"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAllProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/itemBackground"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/divider5"/>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

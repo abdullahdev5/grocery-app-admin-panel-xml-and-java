@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_wishlistItems"
+        android:title="@string/wishlist_items"
+        />
+
+    <item
+        android:id="@+id/nav_cartItems"
+        android:title="@string/cart_items"
+        />
+
+    <item
+        android:id="@+id/nav_allOrders"
+        android:title="@string/all_orders"
+        />
+
+    <item
+        android:id="@+id/nav_toShipped"
+        android:title="@string/to_shipped"
+        />
+
+    <item
+        android:id="@+id/nav_toDelivered"
+        android:title="@string/to_delivered"
+        />
+
+    <item
+        android:id="@+id/nav_toReview"
+        android:title="@string/to_review"
+        />
+
+    <item
+        android:id="@+id/nav_chatBot"
+        android:title="@string/chat_bot"
+        />
+
+    <item
+        android:id="@+id/nav_logOut"
+        android:title="@string/log_out"
+        />
+
+
+</menu>

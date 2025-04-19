@@ -1,0 +1,388 @@
+"roboscript": {
+  "executionMode": {
+    "strict": false
+  },
+  "postscript": {
+    "terminate": false
+  }
+}
+[
+  {
+    "crawlStage": "crawl",
+    "contextDescriptor": {
+      "condition": "app_under_test_shown"
+    },
+    "actions": [
+      {
+        "eventType": "VIEW_CLICKED",
+        "timestamp": 1737026790491,
+        "replacementText": "",
+        "actionCode": -1,
+        "delayTime": 0,
+        "canScrollTo": false,
+        "elementDescriptors": [
+          {
+            "className": "androidx.appcompat.widget.AppCompatImageView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "com.grocery.groceryapp:id/shareIcn",
+            "contentDescription": "For Share",
+            "text": ""
+          },
+          {
+            "className": "android.widget.LinearLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "com.grocery.groceryapp:id/txtLogin",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.RelativeLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "com.grocery.groceryapp:id/main",
+            "contentDescription": "",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "eventType": "VIEW_TEXT_CHANGED",
+        "timestamp": 1737026802180,
+        "replacementText": "ali@gmail.com",
+        "actionCode": -1,
+        "delayTime": 0,
+        "canScrollTo": true,
+        "elementDescriptors": [
+          {
+            "className": "androidx.appcompat.widget.AppCompatEditText",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "com.grocery.groceryapp:id/edtEmail",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.RelativeLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.ScrollView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 1,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "eventType": "PRESSED_EDITOR_ACTION",
+        "timestamp": 1737026823425,
+        "replacementText": "ali@gmail.com",
+        "actionCode": 5,
+        "delayTime": 0,
+        "canScrollTo": true,
+        "elementDescriptors": [
+          {
+            "className": "androidx.appcompat.widget.AppCompatEditText",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "com.grocery.groceryapp:id/edtEmail",
+            "contentDescription": "",
+            "text": "ali@gmail.com"
+          },
+          {
+            "className": "android.widget.RelativeLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.ScrollView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 1,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "eventType": "VIEW_TEXT_CHANGED",
+        "timestamp": 1737026826555,
+        "replacementText": "ali123",
+        "actionCode": -1,
+        "delayTime": 0,
+        "canScrollTo": true,
+        "elementDescriptors": [
+          {
+            "className": "androidx.appcompat.widget.AppCompatEditText",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 1,
+            "resourceId": "com.grocery.groceryapp:id/edtPassword",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.RelativeLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.ScrollView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 1,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "eventType": "PRESSED_EDITOR_ACTION",
+        "timestamp": 1737026836354,
+        "replacementText": "ali123",
+        "actionCode": 6,
+        "delayTime": 0,
+        "canScrollTo": true,
+        "elementDescriptors": [
+          {
+            "className": "androidx.appcompat.widget.AppCompatEditText",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 1,
+            "resourceId": "com.grocery.groceryapp:id/edtPassword",
+            "contentDescription": "",
+            "text": "ali123"
+          },
+          {
+            "className": "android.widget.RelativeLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.ScrollView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 1,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "eventType": "VIEW_CLICKED",
+        "timestamp": 1737026837563,
+        "replacementText": "Log In",
+        "actionCode": -1,
+        "delayTime": 0,
+        "canScrollTo": true,
+        "elementDescriptors": [
+          {
+            "className": "com.google.android.material.button.MaterialButton",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 3,
+            "resourceId": "com.grocery.groceryapp:id/btnLogin",
+            "contentDescription": "",
+            "text": "Log In"
+          },
+          {
+            "className": "android.widget.RelativeLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.ScrollView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 1,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "eventType": "VIEW_CLICKED",
+        "timestamp": 1737026850165,
+        "replacementText": "",
+        "actionCode": -1,
+        "delayTime": 0,
+        "canScrollTo": false,
+        "elementDescriptors": [
+          {
+            "className": "com.google.android.material.bottomnavigation.BottomNavigationItemView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 2,
+            "resourceId": "com.grocery.groceryapp:id/nav_profile",
+            "contentDescription": "Profile",
+            "text": ""
+          },
+          {
+            "className": "com.google.android.material.bottomnavigation.BottomNavigationMenuView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "com.google.android.material.bottomnavigation.BottomNavigationView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 2,
+            "resourceId": "com.grocery.groceryapp:id/bottomNavigation",
+            "contentDescription": "",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "eventType": "VIEW_CLICKED",
+        "timestamp": 1737026854909,
+        "replacementText": "",
+        "actionCode": -1,
+        "delayTime": 0,
+        "canScrollTo": false,
+        "elementDescriptors": [
+          {
+            "className": "android.widget.LinearLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 4,
+            "resourceId": "com.grocery.groceryapp:id/ordersHolder",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.LinearLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 2,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.RelativeLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "eventType": "VIEW_CLICKED",
+        "timestamp": 1737026859306,
+        "replacementText": "",
+        "actionCode": -1,
+        "delayTime": 0,
+        "canScrollTo": false,
+        "elementDescriptors": [
+          {
+            "className": "android.widget.LinearLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "com.grocery.groceryapp:id/allViewsHolder",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "androidx.cardview.widget.CardView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "androidx.recyclerview.widget.RecyclerView",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 1,
+            "resourceId": "com.grocery.groceryapp:id/rvBuyedProducts",
+            "contentDescription": "",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "eventType": "VIEW_CLICKED",
+        "timestamp": 1737026868098,
+        "replacementText": "",
+        "actionCode": -1,
+        "delayTime": 0,
+        "canScrollTo": false,
+        "elementDescriptors": [
+          {
+            "className": "androidx.appcompat.widget.AppCompatImageButton",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 1,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "androidx.appcompat.widget.Toolbar",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "com.grocery.groceryapp:id/toolbar",
+            "contentDescription": "",
+            "text": ""
+          },
+          {
+            "className": "android.widget.RelativeLayout",
+            "recyclerViewChildPosition": -1,
+            "adapterViewChildPosition": -1,
+            "groupViewChildPosition": 0,
+            "resourceId": "",
+            "contentDescription": "",
+            "text": ""
+          }
+        ]
+      }
+    ]
+  }
+]

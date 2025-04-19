@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Grocery Admin</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_product">Add Product</string>
+    <string name="add_product_image">Add Product Image</string>
+    <string name="product_title">Product Title</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_price">Product Price</string>
+    <string name="available_products">Available Products</string>
+    <string name="go_next">Go Next</string>
+    <string name="tech">Tech</string>
+    <string name="clothing">Clothing</string>
+    <string name="automotive">Automotive</string>
+    <string name="beauty">Beauty</string>
+    <string name="previous">Previous</string>
+    <string name="rs">Rs.</string>
+    <string name="product_image">Product Image</string>
+    <string name="add_custom">Add Custom</string>
+    <string name="add_custom_category_here">Add Custom Category here</string>
+    <string name="add">Add</string>
+    <string name="note_of_short_product_name">Make Sure You Add the Short Name of Your Product
+        for the better Experience for User and Also Add the short Product Name Between 20 characters.</string>
+    <string name="orders">Orders</string>
+    <string name="delivered">Delivered</string>
+    <string name="out_for_delivery">Out for Delivery</string>
+    <string name="shipped">Shipped</string>
+    <string name="processing">Processing</string>
+    <string name="order_details">Order Details</string>
+    <string name="status">Status:</string>
+    <string name="quantity">Quantity:</string>
+    <string name="update">Update</string>
+
+
+</resources>

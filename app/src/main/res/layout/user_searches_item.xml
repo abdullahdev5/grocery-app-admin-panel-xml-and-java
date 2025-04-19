@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/CardViewTheme"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+    <LinearLayout
+        android:id="@+id/userSearchHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtUserSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/imgDeleteUserSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?selectableItemBackground"
+            app:srcCompat="@drawable/cancel_icon" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LogInActivity">
+
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLogin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:minHeight="48dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="30dp"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginEnd="30dp"
+                />
+
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:minHeight="48dp"
+                android:layout_below="@id/edtEmail"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="30dp"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:inputType="textPassword"
+                android:layout_marginEnd="30dp"
+                />
+
+            <TextView
+                android:id="@+id/txtGoSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtPassword"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/don_t_have_account_click_here_to_sign_up"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/app_icon"
+                android:layout_below="@id/txtGoSignUp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:text="@string/log_in"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUpActivity">
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSignUp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:id="@+id/edtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                android:minHeight="48dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="30dp"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:inputType="text"
+                android:layout_marginEnd="30dp"
+                />
+
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:minHeight="48dp"
+                android:layout_below="@id/edtFullName"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="30dp"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginEnd="30dp"
+                />
+
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:minHeight="48dp"
+                android:layout_below="@id/edtEmail"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="30dp"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:inputType="textPassword"
+                android:layout_marginEnd="30dp"
+                />
+
+            <TextView
+                android:id="@+id/txtGoLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtPassword"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/already_have_account_click_to_log_in"/>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/app_icon"
+                android:layout_below="@id/txtGoLogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:text="@string/sign_up"
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

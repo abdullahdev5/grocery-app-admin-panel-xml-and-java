@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.AddProductFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/edtProductTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditTextTheme"
+                android:hint="@string/product_title"
+                android:paddingStart="20dp"
+                android:inputType="text"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="50dp"
+                android:minHeight="48dp"/>
+
+            <EditText
+                android:id="@+id/edtProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtProductTitle"
+                style="@style/EditTextTheme"
+                android:hint="@string/product_price"
+                android:paddingStart="20dp"
+                android:inputType="numberSigned"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"/>
+
+            <LinearLayout
+                android:id="@+id/shortProductNameHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtProductPrice"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <EditText
+                    style="@style/EditTextTheme"
+                    android:id="@+id/edtShortProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:minHeight="48dp"
+                    android:paddingStart="20dp"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:hint="Short Product Name" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:text="@string/note_of_short_product_name" />
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtAvailableProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shortProductNameHolder"
+                style="@style/EditTextTheme"
+                android:hint="@string/available_products"
+                android:paddingStart="20dp"
+                android:inputType="number"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="50dp"
+                android:minHeight="48dp"/>
+
+            <EditText
+                android:id="@+id/edtProductDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtAvailableProducts"
+                style="@style/EditTextTheme"
+                android:hint="@string/product_description"
+                android:paddingStart="20dp"
+                android:nestedScrollingEnabled="true"
+                android:overScrollMode="always"
+                android:inputType="textMultiLine"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="100dp"/>
+
+            <LinearLayout
+                android:id="@+id/categoryHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtProductDescription"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category:"
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp" />
+
+                <TextView
+                    android:id="@+id/txtCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/imgMenuCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/three_dots_icon" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnAddProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_below="@id/categoryHolder"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="100dp"
+                android:text="@string/go_next"
+                android:backgroundTint="@color/app_icon"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserSearchesActivity">
+
+            <LinearLayout
+                android:id="@+id/searchViewHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:background="?selectableItemBackground"
+                    android:layout_marginStart="5dp"
+                    app:srcCompat="@drawable/back_arrow_icon" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    app:iconifiedByDefault="false"
+                    android:layout_marginEnd="10dp"
+                    android:searchIcon="@drawable/search_icon"
+                    android:background="@drawable/user_searches_view_holder" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvUserSearches"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/searchViewHolder"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSearchesSuggestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_below="@+id/searchViewHolder"/>
+
+
+
+
+
+</RelativeLayout>

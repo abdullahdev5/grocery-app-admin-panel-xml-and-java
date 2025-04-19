@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_tech"
+        android:title="@string/tech"
+        />
+
+    <item
+        android:id="@+id/nav_clothing"
+        android:title="@string/clothing" />
+
+    <item
+        android:id="@+id/nav_automotive"
+        android:title="@string/automotive" />
+
+    <item
+        android:id="@+id/nav_Beauty"
+        android:title="@string/beauty" />
+
+
+
+</menu>

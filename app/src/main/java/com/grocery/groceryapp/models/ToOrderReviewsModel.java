@@ -1,0 +1,267 @@
+package com.grocery.groceryapp.models;
+
+import com.google.firebase.Timestamp;
+
+public class ToOrderReviewsModel {
+
+
+    String productTitle, productDescription, productCategory, productImage,
+            key, shortProductName, orderStatus, totalPrice, paymentMethod, phoneNumber,
+            address, fullName, orderReviewImage, orderReviewDescription, productKey;
+    long productItems, productPrice, availableProducts, orderId, orderRating;
+    Timestamp timeStamp;
+
+    public ToOrderReviewsModel() {}
+
+    public ToOrderReviewsModel(
+            String productTitle, String productDescription, String productCategory,
+            String productImage, String key, String shortProductName, String orderStatus,
+            String totalPrice, String paymentMethod, String phoneNumber, String address,
+            String fullName, String orderReviewImage, String orderReviewDescription,
+            long productItems, long productPrice, long availableProducts, long orderId,
+            long orderRating, Timestamp timeStamp, String productKey
+    ) {
+        this.productTitle = productTitle;
+        this.productDescription = productDescription;
+        this.productCategory = productCategory;
+        this.productImage = productImage;
+        this.key = key;
+        this.shortProductName = shortProductName;
+        this.orderStatus = orderStatus;
+        this.totalPrice = totalPrice;
+        this.paymentMethod = paymentMethod;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+        this.fullName = fullName;
+        this.orderReviewImage = orderReviewImage;
+        this.orderReviewDescription = orderReviewDescription;
+        this.productItems = productItems;
+        this.productPrice = productPrice;
+        this.availableProducts = availableProducts;
+        this.orderId = orderId;
+        this.orderRating = orderRating;
+        this.timeStamp = timeStamp;
+        this.productKey = productKey;
+    }
+
+
+    // for user id key
+    public ToOrderReviewsModel(
+            String productTitle, String productDescription, String productCategory,
+            String productImage, String key, String orderStatus, String fullName, String orderReviewImage,
+            String orderReviewDescription, long productItems, long productPrice, long availableProducts, long orderId,
+            long orderRating, Timestamp timeStamp
+    ) {
+        this.productTitle = productTitle;
+        this.productDescription = productDescription;
+        this.productCategory = productCategory;
+        this.productImage = productImage;
+        this.key = key;
+        this.orderStatus = orderStatus;
+        this.fullName = fullName;
+        this.orderReviewImage = orderReviewImage;
+        this.orderReviewDescription = orderReviewDescription;
+        this.productItems = productItems;
+        this.productPrice = productPrice;
+        this.availableProducts = availableProducts;
+        this.orderId = orderId;
+        this.orderRating = orderRating;
+        this.timeStamp = timeStamp;
+    }
+
+    // for product key
+
+    public ToOrderReviewsModel(
+            String productTitle, String productDescription, String productCategory,
+            String productImage, long orderRating, String orderStatus, String fullName, String orderReviewImage,
+            String orderReviewDescription, long productItems, long productPrice, long availableProducts, long orderId,
+            String productKey, Timestamp timeStamp
+    ) {
+        this.productTitle = productTitle;
+        this.productDescription = productDescription;
+        this.productCategory = productCategory;
+        this.productImage = productImage;
+        this.orderRating = orderRating;
+        this.orderStatus = orderStatus;
+        this.fullName = fullName;
+        this.orderReviewImage = orderReviewImage;
+        this.orderReviewDescription = orderReviewDescription;
+        this.productItems = productItems;
+        this.productPrice = productPrice;
+        this.availableProducts = availableProducts;
+        this.orderId = orderId;
+        this.productKey = productKey;
+        this.timeStamp = timeStamp;
+    }
+
+
+
+
+    public String getProductTitle() {
+        return productTitle;
+    }
+
+    public void setProductTitle(String productTitle) {
+        this.productTitle = productTitle;
+    }
+
+    public String getProductDescription() {
+        return productDescription;
+    }
+
+    public void setProductDescription(String productDescription) {
+        this.productDescription = productDescription;
+    }
+
+    public String getProductCategory() {
+        return productCategory;
+    }
+
+    public void setProductCategory(String productCategory) {
+        this.productCategory = productCategory;
+    }
+
+    public String getProductImage() {
+        return productImage;
+    }
+
+    public void setProductImage(String productImage) {
+        this.productImage = productImage;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public String getShortProductName() {
+        return shortProductName;
+    }
+
+    public void setShortProductName(String shortProductName) {
+        this.shortProductName = shortProductName;
+    }
+
+    public String getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+
+    public String getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(String totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public String getPaymentMethod() {
+        return paymentMethod;
+    }
+
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getOrderReviewImage() {
+        return orderReviewImage;
+    }
+
+    public void setOrderReviewImage(String orderReviewImage) {
+        this.orderReviewImage = orderReviewImage;
+    }
+
+    public String getOrderReviewDescription() {
+        return orderReviewDescription;
+    }
+
+    public void setOrderReviewDescription(String orderReviewDescription) {
+        this.orderReviewDescription = orderReviewDescription;
+    }
+
+    public long getProductItems() {
+        return productItems;
+    }
+
+    public void setProductItems(long productItems) {
+        this.productItems = productItems;
+    }
+
+    public long getProductPrice() {
+        return productPrice;
+    }
+
+    public void setProductPrice(long productPrice) {
+        this.productPrice = productPrice;
+    }
+
+    public long getAvailableProducts() {
+        return availableProducts;
+    }
+
+    public void setAvailableProducts(long availableProducts) {
+        this.availableProducts = availableProducts;
+    }
+
+    public long getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(long orderId) {
+        this.orderId = orderId;
+    }
+
+    public long getOrderRating() {
+        return orderRating;
+    }
+
+    public void setOrderRating(long orderRating) {
+        this.orderRating = orderRating;
+    }
+
+    public Timestamp getTimeStamp() {
+        return timeStamp;
+    }
+
+    public void setTimeStamp(Timestamp timeStamp) {
+        this.timeStamp = timeStamp;
+    }
+
+    public String getProductKey() {
+        return productKey;
+    }
+
+    public void setProductKey(String productKey) {
+        this.productKey = productKey;
+    }
+}

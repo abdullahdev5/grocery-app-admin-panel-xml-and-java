@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_delivered"
+        android:title="@string/delivered"
+        />
+
+    <item
+        android:id="@+id/nav_outForDelivery"
+        android:title="@string/out_for_delivery" />
+
+    <item
+        android:id="@+id/nav_shipped"
+        android:title="@string/shipped" />
+
+    <item
+        android:id="@+id/nav_processing"
+        android:title="@string/processing" />
+
+
+
+
+</menu>

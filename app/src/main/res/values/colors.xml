@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_icon">#4eac7c</color>
+    <color name="itemBackground">#FBFBFB</color>
+    <color name="grey">#D3CCCC</color>
+    <color name="recycler_view_bg">#F1F1F1</color>
+    <color name="tech_bg">#0E5A98</color>
+    <color name="clothing_bg">#336835</color>
+    <color name="automotive_bg">#ED233A</color>
+    <color name="beauty_bg">#AA6CB5</color>
+    <color name="edt_stroke">#989292</color>
+    <color name="txt_available_products">#878383</color>
+    <color name="yellow">#F3DB07</color>
+
+</resources>

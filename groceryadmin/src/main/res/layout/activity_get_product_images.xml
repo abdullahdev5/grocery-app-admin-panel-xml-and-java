@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GetProductImagesActivity">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imgProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:iss_title_background="@null"
+            app:iss_corner_radius="10"
+            android:isScrollContainer="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?selectableItemBackground"
+            app:iss_placeholder="@drawable/loading_image"
+            app:iss_selected_dot="@drawable/default_selected_dot"
+            app:iss_unselected_dot="@drawable/default_unselected_dot" >
+
+            <ImageView
+                android:id="@+id/imgAddProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/add_image_gallery_icon" />
+
+        </com.denzcoskun.imageslider.ImageSlider>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/addProductImageHolder"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btnGoPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#DCA5A5"
+            android:text="@string/previous" />
+
+        <Button
+            android:id="@+id/btnAddProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/app_icon"
+            android:layout_marginStart="20dp"
+            android:text="@string/add_product" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/addProductImageHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_below="@id/imgProductImage"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add_image_gallery_icon"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/add_product_image"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

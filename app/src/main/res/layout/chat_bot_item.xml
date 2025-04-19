@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/chatBotMessageHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="60dp"
+        android:layout_gravity="start"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/app_icon"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?selectableItemBackground"
+            android:layout_gravity="start"
+            android:src="@drawable/chat_bot_icon" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:minHeight="40dp"
+            android:minWidth="80dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/chat_bot_msg_bg"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/imgAllBotTextCopied"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/copy_icon" />
+
+            <TextView
+                android:id="@+id/txtChatBotAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:text=""/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userMessageHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="50dp"
+        android:layout_gravity="end"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUserImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/app_icon"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?selectableItemBackground"
+            android:layout_gravity="end"
+            android:src="@drawable/user_no_profile_icon" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/user_msg_bg"
+            android:minWidth="80dp"
+            android:minHeight="40dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgAllUserTextCopied"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="start"
+                app:tint="@color/white"
+                app:srcCompat="@drawable/copy_icon" />
+
+            <TextView
+                android:id="@+id/txtUserMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
