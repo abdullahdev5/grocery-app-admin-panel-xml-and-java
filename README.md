@@ -57,6 +57,7 @@
 - **IDE**: Android Studio
 - **Build Tool**: Gradle
 
+---
 
 ## Screenshots
 
@@ -80,6 +81,7 @@
 
 
 ---
+
 
 ## 🛠 Setup Instructions
 1. Clone the repository  
