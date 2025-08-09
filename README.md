@@ -59,7 +59,7 @@
 
 ---
 
-## Screenshots
+## 📷 Screenshots
 
 ![screenshot_1](https://github.com/user-attachments/assets/2293bc82-da1e-4a15-a4b4-32761b74680a)
 
