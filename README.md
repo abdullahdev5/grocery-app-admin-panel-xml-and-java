@@ -61,23 +61,23 @@
 
 ## 📷 Screenshots
 
-![screenshot_1](https://github.com/user-attachments/assets/2293bc82-da1e-4a15-a4b4-32761b74680a)
-
-![screenshot_2](https://github.com/user-attachments/assets/24a7d89c-1467-436b-8084-3dd3f6412b3d)
-
-![screenshot_3](https://github.com/user-attachments/assets/7c71a616-e2ce-4516-8104-ea9ffa521bc4)
-
-![screenshot_4](https://github.com/user-attachments/assets/c55bca9e-8d19-4d7c-af6a-e88c6a8aedbd)
-
-![screenshot_5](https://github.com/user-attachments/assets/d946e316-c27b-45f5-a0ee-ec63c5ca3245)
-
-![screenshot_6](https://github.com/user-attachments/assets/2d1a6b07-2821-46c1-8112-90363d4e592d)
-
-![screenshot_7](https://github.com/user-attachments/assets/f4acec27-a498-420b-8e1b-879e5f4d6cd5)
-
-![screenshot_8](https://github.com/user-attachments/assets/3e05697d-a30a-4c0e-9e8f-967318db055d)
-
-![screenshot_9](https://github.com/user-attachments/assets/ebcb78ff-b25c-4b5f-8866-5c160e874a99)
+<table>
+  <tr
+    <td><img src="https://github.com/user-attachments/assets/2293bc82-da1e-4a15-a4b4-32761b74680a" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/24a7d89c-1467-436b-8084-3dd3f6412b3d" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/7c71a616-e2ce-4516-8104-ea9ffa521bc4" width="200"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/c55bca9e-8d19-4d7c-af6a-e88c6a8aedbd" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/d946e316-c27b-45f5-a0ee-ec63c5ca3245" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/2d1a6b07-2821-46c1-8112-90363d4e592d" width="200"/></td>
+  </tr>
+   <tr>
+    <td><img src="https://github.com/user-attachments/assets/f4acec27-a498-420b-8e1b-879e5f4d6cd5" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/3e05697d-a30a-4c0e-9e8f-967318db055d" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/ebcb78ff-b25c-4b5f-8866-5c160e874a99" width="200"/></td>
+  </tr>
+</table>
 
 
 ---
